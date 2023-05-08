@@ -1,0 +1,64 @@
+.experiencia{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  flex-wrap: wrap;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  max-width: 1900px;
+  padding: 40px;
+  margin: 0 auto;
+  gap: 70px;
+}
+
+.texto-experiencia{
+  color: rgb(167, 167, 167);
+  font-size: 1.5rem;
+  max-width: 60ch;
+}
+
+strong{
+  color: #e21;
+}
+
+.subtitulo{
+  color: rgb(167, 167, 167);
+  font-size: 8rem;
+  text-transform: uppercase;
+  line-height: 1;
+  word-break: break-all;
+  max-width: 4ch;
+  padding: 40px;
+}
+
+.meus-cargos1{
+  color: white;
+  font-size: 1.5rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin: 40px 80px;
+  color: rgb(167, 167, 167);
+}
+
+.meus-cargos1 h3, span{
+  color: white;
+}
+
+.lista-de-exp1{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+}
+
+.lista-de-exp1 li{
+  background: #e21;
+  border-radius: 5px;
+  color:black;
+  padding: 10px;
+}
+
+.lista-de-exp1 li:hover{
+  background: black;
+  color:#e21;
+}

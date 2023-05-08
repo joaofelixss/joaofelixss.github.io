@@ -1,0 +1,88 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 40px 110px;
+  max-width: 1900px;
+}
+
+.menu {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.menu a {
+  padding: 20px;
+  color: rgb(129, 129, 129);
+  font-size: 1.5rem;
+  line-height: auto;
+  justify-content: center;
+  display: block;
+  padding: 40px;
+  position: relative;
+}
+
+.formacao::before{
+  content: "";
+  display: block;
+  width: 180px;
+  height: 100px;
+  background: url("../Img/pontinho.svg") no-repeat center;
+  position: absolute;
+  top: 5px;
+  right: -100px;
+}
+
+.experiencia::before{
+  content: "";
+  display: block;
+  width: 180px;
+  height: 100px;
+  background: url("../Img/pontinho.svg") no-repeat center;
+  position: absolute;
+  top: 5px;
+  right: -100px;
+}
+
+.projetos::before{
+  content: "";
+  display: block;
+  width: 180px;
+  height: 100px;
+  background: url("../Img/pontinho.svg") no-repeat center;
+  position: absolute;
+  top: 5px;
+  right: -100px;
+}
+
+.menu a:hover{
+  color: #e21;
+}
+
+@media (max-width: 1000px) {
+  .header {
+    flex-direction: column;
+    gap: 40px;
+    padding: 10px;
+  }
+  .header a{
+    background: rgb(209, 13, 13);
+    border-radius: 5px;
+    color: black;
+    padding: 10px;
+  }
+  .projetos::before{
+    display: none;
+  }
+  .experiencia::before{
+    display: none;
+  }
+  .formacao::before{
+    display: none;
+  }
+  .menu a:hover{
+    color: #e21;
+    background: black;
+  }
+}

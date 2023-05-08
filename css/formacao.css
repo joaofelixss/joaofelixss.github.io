@@ -1,0 +1,74 @@
+.formacao {
+  display: grid;
+  margin-top: 100px;
+  max-width: 1900px;
+  flex-wrap: wrap;
+}
+
+.formacao h1 {
+  font-size: 6rem;
+  color: white;
+  display: grid;
+  justify-content: right;
+  margin: 70px 120px;
+  text-transform: uppercase;
+}
+
+.faculdade{
+  display: flex;
+  margin: 20px 70px 40px 260px;
+  gap: 50px;
+  flex-wrap: wrap;
+}
+
+.faculdade-lista{
+  background: #e21;
+  border-radius: 5px;
+  padding: 20px;
+  line-height: 1.3;
+}
+
+.faculdade :hover{
+  background: black;
+  color: #e21;
+}
+
+.faculdade-tipo, .faculdade-tempo {
+  font-size: 1rem;
+  color: rgb(0, 0, 0);
+}
+
+.faculdade-curso {
+  font-size: 2rem;
+  color: rgb(0, 0, 0);
+}
+
+.cursos h1{
+  font-size: 6rem;
+  color: white;
+  display: grid;
+  justify-content: left;
+  margin: 70px 120px;
+  text-transform: uppercase;
+}
+
+.lista-cursos{
+  font-size: 2rem;
+  color: white;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+}
+
+.lista-cursos li{
+background: #e21;
+border-radius: 5px;
+color:black;
+padding: 10px;
+}
+
+.lista-cursos li:hover{
+  background: black;
+  color:#e21;
+}
