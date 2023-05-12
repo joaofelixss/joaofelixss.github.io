@@ -1,88 +1,71 @@
 .header {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
-  margin: 40px 110px;
-  max-width: 1900px;
+  padding-top: 2rem;
+  max-width: 100%;
 }
 
 .menu {
   display: flex;
   flex-wrap: wrap;
-  gap: 10px;
+  gap: 20px;
 }
 
 .menu a {
-  padding: 20px;
-  color: rgb(129, 129, 129);
-  font-size: 1.5rem;
+  color: #000;
+  font-size: 1rem;
   line-height: auto;
   justify-content: center;
-  display: block;
-  padding: 40px;
-  position: relative;
+  display: inline-flex;
+  padding: 15px;
+  align-items: center;
+  border: solid 1px #0059c1;
+  border-radius: 50px;
+  cursor: pointer;
 }
 
-.formacao-link::before{
-  content: "";
-  display: block;
-  width: 180px;
-  height: 100px;
-  background: url("../Img/pontinho.svg") no-repeat center;
-  position: absolute;
-  top: 5px;
-  right: -100px;
+.menu a.curriculo{
+  color: #fff;
+  background: #0059c1;
 }
 
-.experiencia::before{
-  content: "";
-  display: block;
-  width: 180px;
-  height: 100px;
-  background: url("../Img/pontinho.svg") no-repeat center;
-  position: absolute;
-  top: 5px;
-  right: -100px;
+.menu a.curriculo:hover{
+  color: #0059c1;
+  background: #fff;;
 }
 
-.projetos::before{
-  content: "";
-  display: block;
-  width: 180px;
-  height: 100px;
-  background: url("../Img/pontinho.svg") no-repeat center;
-  position: absolute;
-  top: 5px;
-  right: -100px;
+.menu a:hover {
+  color: #fff;
+  background: #0059c1;
+  transition: 0.3s;
 }
 
-.menu a:hover{
-  color: #e21;
-}
-
-@media (max-width: 1000px) {
+@media (max-width: 800px) {
   .header {
+    display: flex;
+    align-items: center;
     flex-direction: column;
     gap: 40px;
     padding: 10px;
   }
-  .header a{
-    background: rgb(209, 13, 13);
+  .header a {
+    background: #0059c1;
     border-radius: 5px;
-    color: black;
+    color: #fff;
     padding: 10px;
   }
-  .projetos::before{
+  .projetos::before {
     display: none;
   }
-  .experiencia::before{
+  .experiencia::before {
     display: none;
   }
-  .formacao::before{
+  .formacao::before {
     display: none;
   }
-  .menu a:hover{
-    color: #e21;
-    background: black;
+  .menu a:hover {
+    color: #0059c1;
+    background: #fff;
   }
 }

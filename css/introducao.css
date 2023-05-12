@@ -1,30 +1,34 @@
 .introducao {
   display: grid;
-  justify-content: space-between;
-  grid-template-columns: 2fr 1fr;
-  margin: 140px 120px;
-  max-width: 1900px;
-  align-items: center;
+  justify-content: center;
+  margin: 140px;
+  max-width: 100%;
   flex-wrap: wrap;
   line-height: 1.5;
-  gap: 133px;
+  align-items: center;
   position: relative;
-}
-
-.foto {
-  display: block;
-  max-width: 100%;
 }
 
 .introducao::before {
   content: "";
-  display: block;
-  width: 400px;
-  height: 400px;
-  background: url("../Img/divisao\ de\ foto.svg") no-repeat center;
+  max-width: 100%;
+  width: 80px;
+  height: 10px;
+  background: #0059c1;
   position: absolute;
-  bottom: 4px;
-  right: 550px;
+  top: 20px;
+  left: 480px;
+}
+
+.introducao::after {
+  content: "";
+  max-width: 100%;
+  width: 80px;
+  height: 10px;
+  background: #0059c1;
+  position: absolute;
+  top: 150px;;
+  right: 500px;
 }
 
 .introducao h1,
@@ -36,101 +40,71 @@ p {
 }
 
 .introducao h1 {
-  font-size: 4.5rem;
-  color: white;
+  font-size: 1.5rem;
+  color: #000;
+}
+
+.introducao h1 span {
+  font-size: 3.5rem;
+  color: #0059c1;
 }
 
 .introducao h2 {
-  color: #e21;
-  font-size: 1.5rem;
+  color: #000;
+  font-size: 2.5rem;
+  display: grid;
+  justify-content: center;
 }
 
 .introducao h3 {
-  font-size: 3rem;
-  color: #e21;
+  margin-top: 40px;
+  font-size: 1.5rem;
+  color: #000;
 }
 
 .introducao p {
-  color: white;
-  font-size: 2rem;
+  color: #000;
+  font-size: 1rem;
   max-width: 40ch;
-}
-
-.botao {
-  background: #e21;
-  color: black;
-  padding: 10px;
-  border-radius: 5px;
-  display: block;
-  font-size: 1.5rem;
-  position: relative;
-  width: 350px;
-}
-
-.botao:hover {
-  background: black;
-  color: #e21;
-}
-
-.botao::before {
-  content: "";
-  display: block;
-  width: 50px;
-  height: 50px;
-  background: url("../Img/cetinha.svg") no-repeat center;
-  position: absolute;
-  top: 5px;
-  right: 50px;
+  font-family: roboto, sans serif;;
 }
 
 @media (max-width: 1000px) {
-  .introducao h1 {
-    font-size: 2.5rem;
+  .introducao::before {
+    content: "";
+    max-width: 100%;
+    width: 80px;
+    height: 10px;
+    background: #0059c1;
+    position: absolute;
+    top: 20px;
+    left: 40px;
   }
-  .introducao h2 {
+  .introducao::after {
+    content: "";
+    max-width: 100%;
+    width: 80px;
+    height: 10px;
+    background: #0059c1;
+    position: absolute;
+    bottom: 0px;
+    right: 40px;
+  }
+}
+@media (max-width: 800px) {
+  .introducao h1 {
     font-size: 1rem;
   }
-  .introducao h3 {
+  .introducao h1 span {
+    font-size: 2rem;
+  }
+  .introducao h2 {
     font-size: 1.5rem;
+  }
+  .introducao h3 {
+    font-size: 1rem;
   }
   .introducao p {
     font-size: 1rem;
-  }
-  .botao {
-    font-size: 1rem;
-  }
-  .botao::before {
-    content: "";
-    display: block;
-    width: 50px;
-    height: 50px;
-    background: url("../Img/cetinha.svg") no-repeat center;
-    position: absolute;
-    top: 8px;
-    right: 50px;
-  }
-  .introducao::before {
-    content: "";
-    display: none;
-  }
-}
-
-@media (max-width: 1600px) {
-  .introducao::before {
-    content: "";
-    display: block;
-    width: 400px;
-    height: 400px;
-    background: url("../Img/divisao\ de\ foto.svg") no-repeat center;
-    position: absolute;
-    bottom: 4px;
-    right: 200px;
-  }
-}
-
-@media (max-width: 1000px) {
-  .introducao::before {
-    content: "";
-    display: none;
   }
 }

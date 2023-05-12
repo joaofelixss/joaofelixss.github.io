@@ -1,6 +1,6 @@
 body {
-  font-family: Arial, Helvetica, sans-serif;
-  background: black;
+  font-family: poppins, Roboto, sans-serif;
+  background: #fff;
   margin: 0px;
 }
 
@@ -17,4 +17,9 @@ ul{
 
 a{
   text-decoration: none;
+}
+
+section span{
+  color: #0059c1;
+  font-size: 3rem;
 }
