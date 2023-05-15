@@ -34,7 +34,7 @@ section h1 {
   max-width: 48ch;
 }
 
-@media(max-width:800px){
+@media(max-width:1000px){
   .experiencia::before {
     content: "";
     max-width: 100%;

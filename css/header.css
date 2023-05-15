@@ -25,14 +25,14 @@
   cursor: pointer;
 }
 
-.menu a.curriculo{
+.menu a.curriculo {
   color: #fff;
   background: #0059c1;
 }
 
-.menu a.curriculo:hover{
+.menu a.curriculo:hover {
   color: #0059c1;
-  background: #fff;;
+  background: #fff;
 }
 
 .menu a:hover {
@@ -67,5 +67,23 @@
   .menu a:hover {
     color: #0059c1;
     background: #fff;
+  }
+}
+
+@media (max-width: 500px) {
+  body{
+    display: grid;
+  }
+  .header{
+    padding: 20px;
+  }
+  .header img{
+    width: 100px;
+  }
+  .menu {
+    justify-content: center;
+  }
+  .menu a {
+    font-size: 3rem;
   }
 }
