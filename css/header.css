@@ -84,6 +84,8 @@
     justify-content: center;
   }
   .menu a {
-    font-size: 3rem;
+    font-size: 2.5rem;
+    padding: 20px;
+    border-radius: 10px;
   }
 }

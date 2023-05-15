@@ -1,7 +1,7 @@
-.formacao-conteudo {
+.formacao {
   display: grid;
   grid-template-columns: 1fr, 1fr;
-  margin: 120px;
+  margin-top: 120px;
   max-width: 100%;
   flex-wrap: wrap;
   justify-content: center;
@@ -15,11 +15,13 @@
 .formacao h1 {
   font-size: 3rem;
   color: #000;
+  margin-bottom: 20px;
 }
 
-.faculdade{
-  display: grid;
+.faculdade {
+  display:flex;  
   grid-column: 1;
+  gap: 10px;
 }
 
 .faculdade h2 {
@@ -35,11 +37,11 @@
 
 .cursos {
   display: grid;
-  grid-column: 2;
-  align-items: center;
-  justify-content: center;
+  margin: 120px;
+  grid-template-columns: 1fr;
+  max-width: 100%;
+  flex-wrap: wrap;
   text-align: center;
-  padding: 50px;
 }
 
 .cursos h1 {
@@ -48,8 +50,7 @@
 }
 
 .lista-cursos {
-  font-size: 2rem;
-  color: white;
+  font-size: 1rem;
   display: flex;
   flex-wrap: wrap;
   gap: 10px;
@@ -58,7 +59,7 @@
 
 .lista-cursos li {
   background: #0059c1;
-  border-radius: 5px;
+  border-radius: 10px;
   color: #fff;
   padding: 10px;
 }
@@ -66,4 +67,23 @@
 .lista-cursos li:hover {
   background: #fff;
   color: #0059c1;
+}
+
+@media (max-width: 500px) {
+  .formacao {
+    margin: 80px 0px;
+    padding: 30px;
+    flex-direction: column;
+  }
+  .formacao h1 {
+    font-size: 4rem;
+  }
+  .faculdade{
+    display: flex;
+    gap: 10px;
+    font-size: 2rem;
+  }
+  .cursos{
+    grid-column: 2;
+  }
 }
