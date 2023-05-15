@@ -46,3 +46,28 @@ section h1 {
     position: absolute;
   }
 }
+
+@media(max-width:500px){
+  .experiencia{
+    padding: 30px;
+  }
+  .experiencia h1{
+    font-size: 4rem;
+  }
+  .experiencia h3{
+    font-size: 2rem;
+  }
+  .experiencia p{
+    font-size: 2rem;
+  }
+  .experiencia h1::before {
+    content: "";
+    max-width: 100%;
+    width: 750px;
+    height: 4px;
+    background: #0059c1;
+    top: 120px;
+    left: 30px;
+    position: absolute;
+  }
+}
