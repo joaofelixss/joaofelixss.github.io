@@ -4,18 +4,6 @@
   justify-content: center;
   max-width: 100%;
   padding: 40px;
-  position: relative;
-}
-
-.experiencia::before {
-  content: "";
-  max-width: 100%;
-  width: 500px;
-  height: 2px;
-  background: #0059c1;
-  top: 110px;
-  left: 685px;
-  position: absolute;
 }
 
 section h1 {
@@ -34,40 +22,17 @@ section h1 {
   max-width: 48ch;
 }
 
-@media(max-width:1000px){
-  .experiencia::before {
-    content: "";
-    max-width: 100%;
-    width: 750px;
-    height: 2px;
-    background: #0059c1;
-    top: 150px;
-    left: 40px;
-    position: absolute;
-  }
-}
-
 @media(max-width:500px){
   .experiencia{
-    padding: 30px;
+    padding: 20px;
   }
   .experiencia h1{
-    font-size: 4rem;
+    font-size: 3rem;
   }
   .experiencia h3{
-    font-size: 2rem;
+    font-size: 1rem;
   }
   .experiencia p{
-    font-size: 2rem;
-  }
-  .experiencia h1::before {
-    content: "";
-    max-width: 100%;
-    width: 750px;
-    height: 4px;
-    background: #0059c1;
-    top: 120px;
-    left: 30px;
-    position: absolute;
+    font-size: 1rem;
   }
 }

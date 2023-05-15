@@ -55,15 +55,6 @@
     color: #fff;
     padding: 10px;
   }
-  .projetos::before {
-    display: none;
-  }
-  .experiencia::before {
-    display: none;
-  }
-  .formacao::before {
-    display: none;
-  }
   .menu a:hover {
     color: #0059c1;
     background: #fff;
@@ -71,21 +62,19 @@
 }
 
 @media (max-width: 500px) {
-  body{
-    display: grid;
-  }
   .header{
-    padding: 20px;
+    padding: 10px;
+    max-width: 100%;
   }
   .header img{
-    width: 100px;
+    width: 50px;
   }
   .menu {
     justify-content: center;
   }
   .menu a {
-    font-size: 2.5rem;
-    padding: 20px;
+    font-size: 1.5rem;
+    padding: 10px;
     border-radius: 10px;
   }
 }

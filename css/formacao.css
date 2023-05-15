@@ -73,17 +73,20 @@
   .formacao {
     margin: 80px 0px;
     padding: 30px;
-    flex-direction: column;
   }
   .formacao h1 {
-    font-size: 4rem;
+    font-size: 3rem;
   }
   .faculdade{
     display: flex;
     gap: 10px;
-    font-size: 2rem;
+    font-size: 1rem;
   }
-  .cursos{
-    grid-column: 2;
+  .cursos h1{
+    font-size: 3rem;
+  }
+
+  .cursos li{
+    font-size: 1.5rem;
   }
 }

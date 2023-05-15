@@ -112,42 +112,42 @@ p {
 @media (max-width: 500px) {
   .introducao{
     margin: 80px 0px;
-    padding: 40px;
+    padding: 20px;
   }
   .introducao h2{
-    font-size: 3rem;
+    font-size: 2rem;
   }
   .introducao h1{
-    font-size: 4rem;
+    font-size: 2.5rem;
   }
   .introducao h1 span{
-    font-size: 4.5rem;
-  }
-  .introducao h3{
     font-size: 3rem;
   }
-  .introducao p{
+  .introducao h3{
     font-size: 2rem;
+  }
+  .introducao p{
+    font-size: 1rem;
     color: #272727;
   }
   .introducao::before {
     content: "";
     max-width: 100%;
-    width: 80px;
+    width: 50px;
     height: 10px;
     background: #0059c1;
     position: absolute;
-    top: 40px;
-    left: 10px;
+    top: 20px;
+    left: 5px;
   }
   .introducao::after {
     content: "";
     max-width: 100%;
-    width: 80px;
+    width: 50px;
     height: 10px;
     background: #0059c1;
     position: absolute;
-    top: 320px;
-    right: 100px;
+    top: 280px;
+    right: 20px;
   }
 }
