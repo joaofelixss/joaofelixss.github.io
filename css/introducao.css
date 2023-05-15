@@ -27,7 +27,7 @@
   height: 10px;
   background: #0059c1;
   position: absolute;
-  top: 150px;;
+  top: 150px;
   right: 500px;
 }
 
@@ -66,7 +66,7 @@ p {
   color: #000;
   font-size: 1rem;
   max-width: 40ch;
-  font-family: roboto, sans serif;;
+  font-family: roboto, sans serif;
 }
 
 @media (max-width: 1000px) {
@@ -106,5 +106,48 @@ p {
   }
   .introducao p {
     font-size: 1rem;
+  }
+}
+
+@media (max-width: 500px) {
+  .introducao{
+    margin: 80px 0px;
+    padding: 40px;
+  }
+  .introducao h2{
+    font-size: 3rem;
+  }
+  .introducao h1{
+    font-size: 4rem;
+  }
+  .introducao h1 span{
+    font-size: 4.5rem;
+  }
+  .introducao h3{
+    font-size: 3rem;
+  }
+  .introducao p{
+    font-size: 2rem;
+    color: #272727;
+  }
+  .introducao::before {
+    content: "";
+    max-width: 100%;
+    width: 80px;
+    height: 10px;
+    background: #0059c1;
+    position: absolute;
+    top: 40px;
+    left: 10px;
+  }
+  .introducao::after {
+    content: "";
+    max-width: 100%;
+    width: 80px;
+    height: 10px;
+    background: #0059c1;
+    position: absolute;
+    top: 320px;
+    right: 100px;
   }
 }
