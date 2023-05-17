@@ -12,14 +12,14 @@
 
 .footer a {
   color: #fff;
-  background: #000;
+  background: #0059c1;
   padding: 20px;
-  border-radius: 10px;
+  border-radius: 20px;
 }
 
 .footer a:hover {
-  color: #fff;;
-  background: #000;
+  color: #000;;
+  background: #fff;
 }
 
 .footer-copy {

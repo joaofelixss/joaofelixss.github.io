@@ -1,6 +1,5 @@
 .formacao {
   display: grid;
-  grid-template-columns: 1fr, 1fr;
   margin-top: 120px;
   max-width: 100%;
   flex-wrap: wrap;
@@ -19,14 +18,19 @@
 }
 
 .faculdade {
-  display:flex;  
-  grid-column: 1;
+  margin-top: 30px;
+  display: flex;
   gap: 10px;
 }
 
-.faculdade h2 {
+.faculdade1 {
+  margin-top: 50px;
+  display: flex;
+  gap: 10px;
+}
+
+.faculdade .faculdade1 h2 {
   font-size: 1rem;
-  display: grid;
 }
 
 .faculdade-tipo,
@@ -77,16 +81,16 @@
   .formacao h1 {
     font-size: 3rem;
   }
-  .faculdade{
+  .faculdade {
     display: flex;
     gap: 10px;
     font-size: 1rem;
   }
-  .cursos h1{
+  .cursos h1 {
     font-size: 3rem;
   }
 
-  .cursos li{
+  .cursos li {
     font-size: 1.5rem;
   }
 }
