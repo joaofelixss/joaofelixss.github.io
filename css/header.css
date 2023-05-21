@@ -15,10 +15,11 @@
 .menu a {
   color: #000;
   font-size: 1rem;
+  font-weight: 500;
   line-height: auto;
   justify-content: center;
   display: inline-flex;
-  padding: 15px;
+  padding: 10px;
   align-items: center;
   border: solid 1px #0059c1;
   border-radius: 50px;
@@ -55,26 +56,11 @@
     color: #fff;
     padding: 10px;
   }
-  .menu a:hover {
-    color: #0059c1;
-    background: #fff;
-  }
-}
-
-@media (max-width: 500px) {
-  .header{
-    padding: 10px;
-    max-width: 100%;
-  }
-  .header img{
-    width: 50px;
-  }
   .menu {
     justify-content: center;
   }
-  .menu a {
-    font-size: 1.5rem;
-    padding: 10px;
-    border-radius: 10px;
+  .menu a:hover {
+    color: #0059c1;
+    background: #fff;
   }
 }

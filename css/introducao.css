@@ -1,34 +1,11 @@
 .introducao {
   display: grid;
+  align-items: center;
   justify-content: center;
+  grid-template-columns: 2fr 1fr;
   margin: 140px;
   max-width: 100%;
-  flex-wrap: wrap;
-  line-height: 1.5;
-  align-items: center;
-  position: relative;
-}
-
-.introducao::before {
-  content: "";
-  max-width: 100%;
-  width: 80px;
-  height: 10px;
-  background: #0059c1;
-  position: absolute;
-  top: 20px;
-  left: 480px;
-}
-
-.introducao::after {
-  content: "";
-  max-width: 100%;
-  width: 80px;
-  height: 10px;
-  background: #0059c1;
-  position: absolute;
-  top: 150px;
-  right: 500px;
+  gap: 50px;
 }
 
 .introducao h1,
@@ -36,10 +13,16 @@ h2,
 h3,
 p {
   margin: 0px;
-  grid-column: 1;
 }
 
-.introducao h1 {
+
+.introducao-nome{
+  text-align: center;
+  line-height: 1.5;
+  position: relative;
+}
+
+.introducao-nome h1 {
   font-size: 1.5rem;
   color: #000;
 }
@@ -47,6 +30,7 @@ p {
 .introducao h1 span {
   font-size: 3.5rem;
   color: #0059c1;
+  font-weight: 600;
 }
 
 .introducao h2 {
@@ -54,100 +38,165 @@ p {
   font-size: 2.5rem;
   display: grid;
   justify-content: center;
+  font-weight: 600;
 }
 
-.introducao h3 {
-  margin-top: 40px;
-  font-size: 1.5rem;
-  color: #000;
+.introducao-sobre{
+  display: grid;
+  justify-content: center;
+  text-align: center;
+  grid-column: 1/-1;
+  font-family: poppins, sans-serif;
+  font-weight: 300;
 }
 
-.introducao p {
+.introducao-sobre h3{
+    font-size: 1.5rem;
+    color: #000;
+    text-align: center;
+}
+
+  
+.introducao-sobre p{
   color: #000;
   font-size: 1rem;
-  max-width: 40ch;
+  max-width: 80ch;
   font-family: roboto, sans serif;
 }
 
-@media (max-width: 1000px) {
-  .introducao::before {
-    content: "";
-    max-width: 100%;
-    width: 80px;
-    height: 10px;
-    background: #0059c1;
-    position: absolute;
-    top: 20px;
-    left: 40px;
-  }
-  .introducao::after {
-    content: "";
-    max-width: 100%;
-    width: 80px;
-    height: 10px;
-    background: #0059c1;
-    position: absolute;
-    bottom: 0px;
-    right: 40px;
-  }
+.introducao-nome::before {
+  content: "";
+  max-width: 100%;
+  width: 80px;
+  height: 10px;
+  background: #0059c1;
+  position: absolute;
+  top: 20px;
+  left: 220px;
 }
-@media (max-width: 800px) {
-  .introducao h1 {
+
+.introducao-nome::after {
+  content: "";
+  max-width: 100%;
+  width: 80px;
+  height: 10px;
+  background: #0059c1;
+  position: absolute;
+  top: 140px;
+  right: 250px;
+}
+
+.introducao img{
+  max-width: 100%;
+  border-radius: 10px;
+  display: block;
+}
+
+@media (max-width: 1150px) {
+  .introducao-nome::before {
+    content: "";
+    max-width: 100%;
+    width: 80px;
+    height: 10px;
+    background: #0059c1;
+    position: absolute;
+    top: 0px;
+    left: 10px;
+  }
+  .introducao-nome::after {
+    content: "";
+    max-width: 100%;
+    width: 80px;
+    height: 10px;
+    background: #0059c1;
+    position: absolute;
+    top: 90px;
+    right: 0px;
+  }
+  .introducao-nome h1 {
     font-size: 1rem;
   }
-  .introducao h1 span {
-    font-size: 2rem;
-  }
-  .introducao h2 {
+  .introducao-nome h1 span {
     font-size: 1.5rem;
+    white-space: nowrap;
   }
-  .introducao h3 {
+  .introducao-nome h2 {
+    font-size: 1.5rem;
+    white-space: nowrap;
+  }
+  .introducao-sobre h3 {
     font-size: 1rem;
   }
-  .introducao p {
+  .introducao-sobre p {
     font-size: 1rem;
   }
 }
 
-@media (max-width: 500px) {
+@media (max-width: 800px) {
+  .introducao{
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+  .introducao img{
+    display: inline;
+    grid-column: 1/-1;
+  }
+  .introducao-nome h1 {
+    font-size: 1rem;
+  }
+  .introducao-nome h1 span {
+    font-size: 2rem;
+  }
+  .introducao-nome h2 {
+    font-size: 1.5rem;
+  }
+  .introducao-sobre h3 {
+    font-size: 1rem;
+  }
+  .introducao-sobre p {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 600px) {
   .introducao{
     margin: 80px 0px;
     padding: 20px;
   }
-  .introducao h2{
-    font-size: 2rem;
-  }
-  .introducao h1{
+  .introducao-nome h2{
     font-size: 2.5rem;
   }
-  .introducao h1 span{
-    font-size: 3rem;
-  }
-  .introducao h3{
+  .introducao-nome h1{
     font-size: 2rem;
   }
-  .introducao p{
-    font-size: 1rem;
+  .introducao-nome h1 span{
+    font-size: 3rem;
+  }
+  .introducao-sobre h3{
+    font-size: 2rem;
+  }
+  .introducao-sobre  p{
+    font-size: 1.5rem;
     color: #272727;
   }
-  .introducao::before {
+  .introducao-nome::before {
     content: "";
     max-width: 100%;
-    width: 50px;
+    width: 80px;
     height: 10px;
     background: #0059c1;
     position: absolute;
-    top: 20px;
-    left: 5px;
+    top: 0px;
+    left: 20px;
   }
-  .introducao::after {
+  .introducao-nome::after {
     content: "";
     max-width: 100%;
-    width: 50px;
+    width: 80px;
     height: 10px;
     background: #0059c1;
     position: absolute;
-    top: 280px;
+    top: 180px;
     right: 20px;
   }
 }
