@@ -7,6 +7,10 @@
 .imagem{
   display: grid;
   justify-content: center;
+  margin-bottom: 100px;
+  align-items: center;
+  max-width: 100%;
+  margin: 50px 500px;
 }
 
 .projetos a{
@@ -19,4 +23,10 @@
 .projetos a:hover{
   color: #000;;
   background: #fff;
+}
+
+@media(max-width:1500px){
+  .imagem{
+    margin: 0 auto;
+  }
 }
