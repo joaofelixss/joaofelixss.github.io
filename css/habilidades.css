@@ -1,38 +1,20 @@
-.experiencia {
+.habilidades{
   display: grid;
-  flex-wrap: wrap;
   justify-content: center;
-  max-width: 100%;
-  padding: 40px;
+  background: #000;
+  color: #fff;
 }
 
-section h1 {
+.habilidades h1{
   font-size: 3rem;
-  margin: 0px;
 }
 
-.meus-cargos1 {
-  display: grid;
-  margin-top: 30px;
-}
-
-.meus-cargos1 p {
-  color: #000;
-  font-size: 1rem;
-  max-width: 48ch;
-}
-
-@media(max-width:500px){
-  .experiencia{
-    padding: 20px;
-  }
-  .experiencia h1{
-    font-size: 3rem;
-  }
-  .experiencia h3{
-    font-size: 1rem;
-  }
-  .experiencia p{
-    font-size: 1rem;
-  }
+.icones li{
+  width: 50px;
+  height: 50px;
+  padding: 20px;
+  display: flex;
+  font-size: 2rem;
+  gap: 10px;
+  font-weight: 600;
 }

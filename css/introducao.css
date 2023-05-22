@@ -51,7 +51,7 @@ p {
 }
 
 .introducao-sobre h3{
-    font-size: 1.5rem;
+    font-size: 2.5rem;
     color: #000;
     text-align: center;
 }
@@ -59,9 +59,8 @@ p {
   
 .introducao-sobre p{
   color: #000;
-  font-size: 1rem;
+  font-size: 1.5rem;
   max-width: 80ch;
-  font-family: roboto, sans serif;
 }
 
 .introducao-nome::before {
@@ -125,7 +124,7 @@ p {
     white-space: nowrap;
   }
   .introducao-sobre h3 {
-    font-size: 1rem;
+    font-size: 1.5rem;
   }
   .introducao-sobre p {
     font-size: 1rem;
