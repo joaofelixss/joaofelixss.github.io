@@ -50,17 +50,11 @@
     gap: 40px;
     padding: 10px;
   }
-  .header a {
-    background: #0059c1;
-    border-radius: 5px;
-    color: #fff;
-    padding: 10px;
-  }
   .menu {
     justify-content: center;
   }
   .menu a:hover {
-    color: #0059c1;
-    background: #fff;
+    color: #fff;
+    background: #0059c1;
   }
 }

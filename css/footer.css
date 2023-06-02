@@ -8,10 +8,17 @@
   background: #0059c1;
 }
 
+.contato{
+  display: flex;
+  gap: 100px;
+  height: 15vh;
+  align-items: center;
+}
+
 .contato li{
   display: flex;
-  height: 40px;
-  width: 40px;
+  height: 50px;
+  width: 50px;
   font-size: 1rem;
   padding: 10px;
   gap: 10px;
@@ -30,4 +37,13 @@
   color: #fff;
   background: #000;
   padding: 10px;
+}
+
+@media(max-width:1100px){
+  .contato{
+    flex-direction: column;
+    gap: 10px;
+    height: 50vh; 
+    justify-content: center;
+  }
 }

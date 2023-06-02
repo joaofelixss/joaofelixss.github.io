@@ -1,20 +1,82 @@
-.habilidades{
+.habilidades {
   display: grid;
   justify-content: center;
-  background: #000;
+  background: #0059c1;
   color: #fff;
+  text-align: center;
+  height: 40vh;
 }
 
-.habilidades h1{
+.habilidades h1 {
   font-size: 3rem;
 }
 
-.icones li{
+.icones{
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 60px;
+}
+
+.icones1 {
+  display: flex;
+  gap: 20px;
+}
+
+.icones2 {
+  display: flex;
+  gap: 20px;
+}
+
+.icones li {
+  display: grid;
+  justify-content: center;
+  width: 100px;
+  padding: 20px;
+  background: #fff;
+  border: 2px solid #000;
+  border-radius: 10px;
+  color: #000;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+li img {
   width: 50px;
   height: 50px;
-  padding: 20px;
-  display: flex;
-  font-size: 2rem;
-  gap: 10px;
-  font-weight: 600;
+}
+
+.icones li:hover {
+  background: #000;
+  color: white;
+}
+
+@media (max-width: 1100px) {
+  .habilidades{
+    height: 60vh;
+    display: grid;
+    justify-content: center;
+  }
+  .icones {
+    gap: 10px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .icones li {
+    font-size: 1rem;
+    font-weight: 600;
+    display: grid;
+    justify-content: center;
+    width: 100px;
+    padding: 10px;
+  }
+  .icones1{
+    display: grid;
+    gap: 20px;
+  }
+  .icones2{
+    display: grid;
+    gap: 20px;
+  }
 }
