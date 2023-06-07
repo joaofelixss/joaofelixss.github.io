@@ -30,6 +30,12 @@
   margin-top: 8px;
 }
 
+.icones-projetos1 {
+  display: flex;
+  gap: 2px;
+  margin-top: 8px;
+}
+
 .imagem img {
   width: 550px;
   height: 350px;
@@ -82,9 +88,9 @@
     align-items: center;
   }
   .contanier-img{
-    height: 300px;
-    width: 400px;
-    padding: 50px;
+    height: 200px;
+    width: 350px;
+    margin-top: 60px;
   }
   .imagem img {
     width: 400px;

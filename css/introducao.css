@@ -149,8 +149,11 @@ p {
 }
 @media (max-width: 600px) {
   .introducao {
-    margin: 80px 0px;
-    padding: 20px;
+    padding: 30px;
+    margin: 0;
+  }
+  .ul-icons {
+    margin-left: 30px;
   }
   .introducao-nome h2 {
     font-size: 2.5rem;
@@ -171,10 +174,11 @@ p {
   .introducao-nome::before {
     content: "";
     max-width: 100%;
-    width: 550px;
+    width: 400px;
     height: 5px;
     background: #ffba05;
     position: absolute;
     top: 230px;
+    left: 10px;
   }
 }
