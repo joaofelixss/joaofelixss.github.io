@@ -1,9 +1,9 @@
 .header {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
-  padding-top: 2rem;
   max-width: 100%;
+  margin: 60px 120px;
 }
 
 .menu {
@@ -13,32 +13,30 @@
 }
 
 .menu a {
-  color: #000;
+  color: #fff;
   font-size: 1rem;
-  font-weight: 500;
   line-height: auto;
   justify-content: center;
   display: inline-flex;
   padding: 10px;
   align-items: center;
-  border: solid 1px #0059c1;
-  border-radius: 50px;
   cursor: pointer;
 }
 
 .menu a.curriculo {
-  color: #fff;
-  background: #0059c1;
+  color: #051932;
+  background: #FFBA05;
+  border-radius: 10px;
+  font-weight: 600;
 }
 
 .menu a.curriculo:hover {
-  color: #0059c1;
-  background: #fff;
+  color: #FFBA05;
+  background: #051932;
 }
 
 .menu a:hover {
-  color: #fff;
-  background: #0059c1;
+  color: #FFBA05;
   transition: 0.3s;
 }
 
@@ -52,9 +50,5 @@
   }
   .menu {
     justify-content: center;
-  }
-  .menu a:hover {
-    color: #fff;
-    background: #0059c1;
   }
 }

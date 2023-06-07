@@ -1,8 +1,10 @@
 body {
   font-family: poppins, sans-serif;
-  background: #fff;
+  background: #051932;
   margin: 0px;
 }
+
+/*background: #FFBA05;*/
 
 img{
   max-width: 100%;

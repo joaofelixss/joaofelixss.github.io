@@ -4,8 +4,8 @@
   max-width: 100%;
   margin-top: 120px;
   text-align: center;
-  color: #fff;
-  background: #0059c1;
+  color: #000;
+  background: #ffba05;
 }
 
 .contato{
@@ -26,17 +26,9 @@
   white-space: nowrap;
 }
 
-.contato a {
-  color: #000;
-  background: #fff;
-  padding: 10px;
-  border-radius: 10px;
-}
-
-.contato a:hover {
-  color: #fff;
-  background: #000;
-  padding: 10px;
+.footer-icons{
+  display: flex;
+  gap: 20px;
 }
 
 @media(max-width:1100px){
