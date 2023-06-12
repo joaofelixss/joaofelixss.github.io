@@ -76,3 +76,28 @@ li img {
     justify-content: center;
   }
 }
+
+@media (max-width: 600px) {
+  .habilidades h1 {
+    font-size: 1.5rem;
+  }
+  .icones {
+    gap: 5px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+  }
+  .icones li {
+    font-size: 0.8rem;
+    font-weight: 600;
+    display: grid;
+    justify-content: center;
+    width: 70px;
+    height: 80px;
+    padding: 10px;
+  }
+  li img {
+    width: 50px;
+    height: 50px;
+  }
+}

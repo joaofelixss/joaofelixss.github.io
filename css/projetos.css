@@ -86,17 +86,37 @@
     display: grid;
     grid-template-columns: 1fr;
     align-items: center;
+   gap: 50px;
+  }
+  .icones-projetos {
+    display: flex;
+    gap: 5px;
+    margin-top: 8px;
+  }
+  .icones-projetos img{
+    height: 40px;
+    width: 40px;
+  }
+  .icones-projetos1 img{
+    height: 40px;
+    width: 40px;
   }
   .contanier-img{
     height: 200px;
     width: 350px;
-    margin-top: 60px;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
   }
   .imagem img {
-    width: 400px;
-    height:300px;
+    width: 350px;
+    height:200px;
   }
   .projetos h2{
     font-size: 1.5rem;
+  }
+  .projetos h1{
+    font-size: 2rem;
+    text-align: center;
   }
 }
