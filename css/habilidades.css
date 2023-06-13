@@ -2,11 +2,11 @@
   display: grid;
   justify-content: center;
   background: #fff;
-  text-align: center;
 }
 
 .habilidades h1 {
   font-size: 44px;
+  text-align: center;
 }
 
 .icones {
@@ -20,11 +20,14 @@
 .icones1 {
   display: flex;
   gap: 20px;
+  text-align: center;
 }
 
 .icones2 {
   display: flex;
   gap: 20px;
+  justify-content: center;
+  text-align: center;
 }
 
 .icones li {

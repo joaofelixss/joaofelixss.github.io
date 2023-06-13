@@ -41,10 +41,6 @@ p {
 }
 
 .introducao-sobre {
-  display: grid;
-  justify-content: center;
-  text-align: center;
-  grid-column: 1/-1;
   font-family: poppins, sans-serif;
   font-weight: 300;
 }
@@ -52,8 +48,8 @@ p {
 .introducao-sobre h3 {
   font-size: 44px;
   color: #051932;
-  text-align: center;
   margin-top: 40px;
+  text-align: center;
 }
 
 .introducao-sobre p {

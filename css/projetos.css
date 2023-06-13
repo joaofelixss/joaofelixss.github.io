@@ -26,14 +26,12 @@
 
 .icones-projetos {
   display: flex;
-  gap: 10px;
+  gap: 5px;
   margin-top: 8px;
 }
-
-.icones-projetos1 {
-  display: flex;
-  gap: 2px;
-  margin-top: 8px;
+.icones-projetos img{
+  height: 50px;
+  width: 50px;
 }
 
 .imagem img {
@@ -94,10 +92,6 @@
     margin-top: 8px;
   }
   .icones-projetos img{
-    height: 40px;
-    width: 40px;
-  }
-  .icones-projetos1 img{
     height: 40px;
     width: 40px;
   }
