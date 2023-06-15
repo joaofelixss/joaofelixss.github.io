@@ -1,9 +1,12 @@
 .header {
+  max-width: 100%;
+  margin: 60px 120px;
+}
+
+#nav{
   display: flex;
   justify-content: space-between;
   align-items: center;
-  max-width: 100%;
-  margin: 60px 120px;
 }
 
 .menu {
@@ -40,29 +43,94 @@
   transition: 0.3s;
 }
 
-@media (max-width: 600px) {
-  .header {
-    margin: 30px;
-  }
-
-  .menu {
-    align-items: center;
-    gap: 20px;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    text-align: center;
-  }
+#btn-mobile {
+  display: none;
 }
 
 @media (max-width: 800px) {
-  .header {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    gap: 40px;
-    padding: 10px;
-  }
   .menu {
     justify-content: center;
+    grid-template-columns: 1fr;
+    display: grid;
+  }
+}
+
+@media (max-width: 600px) {
+  .header{
+    margin: 30px;
+  }
+  #nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 100px;
+  }
+  .menu {
+    display: none;
+    position: absolute;
+    width: 100%;
+    top: 70px;
+    right: 0px;
+    background: #051932;
+    height: 0;
+    transition: .6s;
+    z-index: 1000;
+    visibility: hidden;
+    overflow-y: hidden;
+  }
+  #nav.ativo .menu {
+    visibility: visible;
+    overflow-y: auto;
+    display: block;
+    height: calc(100vh - 70px);
+  }
+  .menu a {
+    color: #fff;
+    padding: 10px;
+    cursor: pointer;
+    display: grid;
+    margin-top: 50px;
+  }
+  .menu a.curriculo {
+    color: #051932;
+    background: #ffba05;
+    border-radius: 0;
+  }
+  #btn-mobile {
+    display: flex;
+    padding: .5rem 1rem;
+    font-size: 1rem;
+    cursor: pointer;
+    background: none;
+    border: none;
+    gap: .5rem;
+    color: #fff;
+    font-weight: 600;
+  }
+  #detalhe{
+    border-top: 2px solid;
+    width: 20px;
+    display: block;
+    color: #ffba05;
+  }
+  #detalhe::after, #detalhe::before {
+    content: '';
+    display: block;
+    width: 20px;
+    height: 2px;
+    background: currentColor;
+    margin-top: 5px;
+    transition: .3s;
+    position: relative;
+  }
+  #nav.ativo #detalhe{
+    border-top-color: transparent;
+  }
+  #nav.ativo #detalhe::before{
+    transform: rotate(135deg);
+  }
+  #nav.ativo #detalhe::after{
+    transform: rotate(-135deg);
+    top: -7px;
   }
 }

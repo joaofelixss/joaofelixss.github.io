@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport"content="width=device-width,initial-scale=1.0">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
   <title>Portifólio João Félix</title>
   <meta name="description" content="Portifólio João Félix">
   <link rel="stylesheet" href="./css/style.css">
@@ -13,10 +13,13 @@
 
 <body>
   <header class="header">
-    <a class="img" href="index.html">
-      <img src="./img/MARCA_PORTIFÓLIO.svg" alt="MARCA_PORTIFÓLIO">
-    </a>
-    <nav>
+    <nav id="nav">
+      <a class="img" href="index.html">
+        <img src="./img/MARCA_PORTIFÓLIO.svg" alt="MARCA_PORTIFÓLIO">
+      </a>
+      <button id="btn-mobile">Menu
+        <span id="detalhe"></span>
+      </button>
       <ul class="menu">
         <li><a class="curriculo" href="/Currículo.pdf">Currículo</a></li>
         <li><a href="#habilidades">Habilidades</a></li>
@@ -50,14 +53,14 @@
       <h3>Sobre mim...</h3>
       <p>Muito prazer meu nome é João Félix, tenho 19 anos e faço graduação em Engenharia de Software. Sou um profissional altamente motivado e apaixonado por tecnologia. Estou constantemente em busca de novos desafios e oportunidades para expandir meus conhecimentos e contribuir para o sucesso das organizações.<br><br>
 
-        Com habilidades sólidas em HTML | CSS | PHP | Javascript | MySQL | Git e Github  sou capaz de fazer sites como: Landing pages, sistema de cadastro login e estou em nesse exato momento em um projeto de sistemas utilizando CRUD como por exemplo um site de delivery para voce escolher oque vai comprar e ainda monitorar os seus pedidos como: Concluído, em entrega e em produção. Sou conhecido por minha ética de trabalho excepcional, atenção aos detalhes e capacidade de trabalhar efetivamente tanto de forma independente quanto em equipe.<br><br>
-        
+        Com habilidades sólidas em HTML | CSS | PHP | Javascript | MySQL | Git e Github sou capaz de fazer sites como: Landing pages, sistema de cadastro login e estou em nesse exato momento em um projeto de sistemas utilizando CRUD como por exemplo um site de delivery para voce escolher oque vai comprar e ainda monitorar os seus pedidos como: Concluído, em entrega e em produção. Sou conhecido por minha ética de trabalho excepcional, atenção aos detalhes e capacidade de trabalhar efetivamente tanto de forma independente quanto em equipe.<br><br>
+
         Meu objetivo é utilizar minha experiência e conhecimentos para assim contribuir com a empresa o máximo possível. Acredito na importância do aprendizado contínuo e estou sempre disposto a adquirir novas habilidades e acompanhar as tendências do mercado.<br><br>
-        
+
         Estou empenhado em estabelecer parcerias significativas e construir relacionamentos profissionais sólidos. Se você está buscando um profissional dedicado, orientado para resultados e com habilidades de um back-end developer, ficarei feliz em discutir oportunidades de colaboração. <br><br>
-        
+
         Entre em contato comigo para conhecer mais sobre minha trajetória profissional e como podemos alcançar resultados incríveis juntos.<br><br>
-        
+
         Email: felixjoao651@gmail.com<br>
         Instagram: @joaofelix.dev.</p>
     </div>
@@ -88,7 +91,7 @@
         <div class="imagem">
           <h2>Sistema de cadastro e login</h2>
           <a href="https://github.com/joaofelixss/sistema_php">
-          <img src=" ./img/PROJETO_FORMULÁRIO.jpg" alt="projeto Formulario">
+            <img src=" ./img/PROJETO_FORMULÁRIO.jpg" alt="projeto Formulario">
           </a>
         </div>
         <ul class="icones-projetos">
@@ -187,6 +190,8 @@
       </a>
     </ul>
   </footer>
+
+  <script src="index.js"></script>
 </body>
 
 </html>

@@ -68,7 +68,7 @@ li img {
   height: 64px;
 }
 
-@media (max-width: 1100px) {
+@media (max-width: 600px) {
   .habilidades {
     display: grid;
     justify-content: center;
@@ -98,33 +98,6 @@ li img {
     gap: 1rem;
     justify-content: center;
   }
-  .sobre-mim h3 {
-    font-size: 1.5rem;
-  }
-  .sobre-mim p {
-    font-size: 1rem;
-  }
-}
-
-@media (max-width: 600px) {
-  .habilidades h1 {
-    font-size: 1.5rem;
-  }
-  .icones {
-    gap: 5px;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    justify-content: center;
-  }
-  .icones li {
-    font-size: 0.8rem;
-    font-weight: 600;
-    display: grid;
-    justify-content: center;
-    width: 90px;
-    height: 100px;
-    padding: 10px;
-  }
   li img {
     width: 50px;
     height: 50px;
@@ -134,6 +107,5 @@ li img {
   }
   .sobre-mim p {
     font-size: 1rem;
-    font-weight: 300;
   }
 }
