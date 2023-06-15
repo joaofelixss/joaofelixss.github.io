@@ -1,27 +1,30 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+
 body {
   font-family: poppins, sans-serif;
   background: #051932;
-  margin: 0px;
 }
 
-/*background: #FFBA05;*/
-
-img{
+img {
   max-width: 100%;
   display: block;
 }
 
-ul{
+ul {
   margin: 0px;
   padding: 0px;
   list-style: none;
 }
 
-a{
+a {
   text-decoration: none;
 }
 
-section span{
-  color: #0059c1;
+section span {
+  color: #ffba05;
   font-size: 3rem;
 }

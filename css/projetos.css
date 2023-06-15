@@ -2,13 +2,13 @@
   display: grid;
   justify-content: center;
   text-align: center;
-  margin-top: 50px;
-  font-size: 2rem;
+  margin: 50px 10px;
+  font-size: 1.5rem;
   color: #fff;
 }
 
-.projetos h2{
-  font-size: 2rem;
+.projetos h2 {
+  font-size: 1.5rem;
 }
 
 .contanier {
@@ -16,9 +16,10 @@
   grid-template-columns: 1fr 1fr;
   align-items: center;
   gap: 100px;
+  margin-bottom: 50px;
 }
 
-.contanier-img{
+.contanier-img {
   height: 400px;
   width: 600px;
   padding: 40px;
@@ -29,7 +30,7 @@
   gap: 5px;
   margin-top: 8px;
 }
-.icones-projetos img{
+.icones-projetos img {
   height: 50px;
   width: 50px;
 }
@@ -45,17 +46,17 @@
     grid-template-columns: 1fr 1fr;
     align-items: center;
   }
-  .contanier-img{
+  .contanier-img {
     height: 300px;
     width: 400px;
     padding: 50px;
   }
   .imagem img {
     width: 400px;
-    height:300px;
+    height: 200px;
   }
-  .projetos h2{
-    font-size: 1.5rem;
+  .projetos h2 {
+    font-size: 1rem;
   }
 }
 
@@ -64,38 +65,33 @@
     display: grid;
     grid-template-columns: 1fr;
     align-items: center;
+    gap: 100px;
   }
-  .contanier-img{
+  .contanier-img {
     height: 300px;
     width: 400px;
     padding: 50px;
   }
   .imagem img {
     width: 400px;
-    height:300px;
+    height: 200px;
   }
-  .projetos h2{
+  .projetos h2 {
     font-size: 1.5rem;
   }
 }
 
 @media (max-width: 600px) {
-  .contanier {
-    display: grid;
-    grid-template-columns: 1fr;
-    align-items: center;
-   gap: 50px;
-  }
   .icones-projetos {
     display: flex;
     gap: 5px;
     margin-top: 8px;
   }
-  .icones-projetos img{
-    height: 40px;
-    width: 40px;
+  .icones-projetos img {
+    height: 30px;
+    width: 30px;
   }
-  .contanier-img{
+  .contanier-img {
     height: 200px;
     width: 350px;
     justify-content: center;
@@ -104,13 +100,9 @@
   }
   .imagem img {
     width: 350px;
-    height:200px;
+    height: 150px;
   }
-  .projetos h2{
-    font-size: 1.5rem;
-  }
-  .projetos h1{
-    font-size: 2rem;
-    text-align: center;
+  .projetos h2 {
+    font-size: 1rem;
   }
 }

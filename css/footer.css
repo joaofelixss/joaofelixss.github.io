@@ -8,14 +8,14 @@
   background: #ffba05;
 }
 
-.contato{
+.contato {
   display: flex;
   gap: 100px;
   height: 15vh;
   align-items: center;
 }
 
-.contato li{
+.contato li {
   display: flex;
   height: 50px;
   width: 50px;
@@ -26,16 +26,16 @@
   white-space: nowrap;
 }
 
-.footer-icons{
+.footer-icons {
   display: flex;
   gap: 20px;
 }
 
-@media(max-width:1100px){
-  .contato{
+@media (max-width: 1100px) {
+  .contato {
     flex-direction: column;
     gap: 10px;
-    height: 50vh; 
+    height: 50vh;
     justify-content: center;
   }
 }

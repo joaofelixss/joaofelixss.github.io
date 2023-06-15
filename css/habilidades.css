@@ -1,11 +1,32 @@
+.sobre-mim {
+  font-family: poppins, sans-serif;
+  font-weight: 300;
+}
+
+.sobre-mim h3 {
+  font-size: 44px;
+  color: #051932;
+  margin-top: 40px;
+  text-align: center;
+}
+
+.sobre-mim p {
+  color: #051932;
+  font-size: 22px;
+  max-width: 80ch;
+  font-weight: 600;
+  margin-bottom: 100px;
+}
+
 .habilidades {
   display: grid;
   justify-content: center;
   background: #fff;
+  text-align: center;
 }
 
 .habilidades h1 {
-  font-size: 44px;
+  font-size: 3rem;
   text-align: center;
 }
 
@@ -14,7 +35,7 @@
   gap: 20px;
   justify-content: center;
   align-items: center;
-  margin-bottom: 60px;
+  margin-bottom: 4rem;
 }
 
 .icones1 {
@@ -33,7 +54,6 @@
 .icones li {
   display: grid;
   justify-content: center;
-  width: 100px;
   padding: 20px;
   background: #051932;
   border: 2px solid #ffba05;
@@ -52,7 +72,7 @@ li img {
   .habilidades {
     display: grid;
     justify-content: center;
-    padding: 20px;
+    padding: 1.5rem;
   }
   .icones {
     gap: 10px;
@@ -66,17 +86,23 @@ li img {
     display: grid;
     justify-content: center;
     width: 100px;
-    padding: 10px;
+    padding: 1rem;
   }
   .icones1 {
     display: grid;
-    gap: 15px;
+    gap: 1rem;
     justify-content: center;
   }
   .icones2 {
     display: grid;
-    gap: 15px;
+    gap: 1rem;
     justify-content: center;
+  }
+  .sobre-mim h3 {
+    font-size: 1.5rem;
+  }
+  .sobre-mim p {
+    font-size: 1rem;
   }
 }
 
@@ -95,12 +121,19 @@ li img {
     font-weight: 600;
     display: grid;
     justify-content: center;
-    width: 70px;
-    height: 80px;
+    width: 90px;
+    height: 100px;
     padding: 10px;
   }
   li img {
     width: 50px;
     height: 50px;
+  }
+  .sobre-mim h3 {
+    font-size: 1.5rem;
+  }
+  .sobre-mim p {
+    font-size: 1rem;
+    font-weight: 300;
   }
 }

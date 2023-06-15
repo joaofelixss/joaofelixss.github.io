@@ -25,18 +25,18 @@
 
 .menu a.curriculo {
   color: #051932;
-  background: #FFBA05;
+  background: #ffba05;
   border-radius: 10px;
   font-weight: 600;
 }
 
 .menu a.curriculo:hover {
-  color: #FFBA05;
+  color: #ffba05;
   background: #051932;
 }
 
 .menu a:hover {
-  color: #FFBA05;
+  color: #ffba05;
   transition: 0.3s;
 }
 
