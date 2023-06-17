@@ -1,13 +1,3 @@
-.introducao {
-  display: grid;
-  align-items: center;
-  justify-content: center;
-  grid-template-columns: 2fr 1fr;
-  margin: 140px;
-  max-width: 100%;
-  gap: 50px;
-}
-
 .introducao h1,
 h2,
 h3,
@@ -15,40 +5,39 @@ p {
   margin: 0px;
 }
 
-.contanier-introducao {
-  position: relative;
+.introducao {
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  grid-template-columns: 1fr 1fr;
+  margin: 140px;
+  max-width: 100%;
+  gap: 50px;
 }
 
-.contanier-introducao h1 {
-  font-size: 44px;
+.title {
+  display: grid;
+  align-items: center;
+  justify-content: center;
+}
+
+.title h1 {
+  font-size: 50px;
   color: #fff;
   text-align: start;
 }
 
-.introducao h1 span {
-  font-size: 56px;
+.title span {
+  font-size: 40px;
   color: #ffba05;
   font-weight: 600;
-  white-space: nowrap;
-  margin: 8px;
+  text-align: center;
 }
 
-.introducao h2 {
+.title p {
   color: #fff;
-  font-size: 48px;
-  font-weight: 600;
-  margin-top: 48px;
-}
-
-.contanier-introducao::before {
-  content: "";
-  max-width: 100%;
-  width: 550px;
-  height: 5px;
-  background: #ffba05;
-  position: absolute;
-  top: 275px;
-  left: -20px;
+  font-size: 30px;
+  text-align: center;
 }
 
 .introducao img {
@@ -57,79 +46,82 @@ p {
   border-radius: 200px;
 }
 
-.ul-icons {
+.actions {
+  padding: 30px;
   display: flex;
-  gap: 5px;
-  margin-top: 20px;
-  margin-left: 100px;
+  align-items: center;
+  gap: 20px;
+  justify-content: center;
+}
+
+.curriculo {
+  color: #051932;
+  background: #ffba05;
+  border-radius: 40px;
+  font-weight: 600;
+  padding: 20px;
+  text-align: center;
+}
+
+.curriculo:hover {
+  color: #ffba05;
+  background: #051932;
+}
+
+.contato {
+  color: #fff;
+  border-radius: 40px;
+  border: #ffba05 2px solid;
+  font-weight: 600;
+  padding: 20px;
+  text-align: center;
+}
+
+.contato:hover {
+  color: #ffba05;
+  background: #051932;
 }
 
 @media (max-width: 1150px) {
   .introducao {
+    padding: 30px;
+    margin: 0;
+    justify-content: center;
+    display: grid;
+    justify-items: center;
     grid-template-columns: 1fr;
   }
-  .contanier-introducao {
-    padding: 30px;
-    margin: 0;
-    justify-content: center;
-    display: grid;
-  }
-  .introducao img {
-    max-width: 100%;
-    display: grid;
-    border-radius: 200px;
-    justify-content: center;
-  }
-  .contanier-introducao::before {
-    content: "";
-    max-width: 100%;
-    width: 550px;
-    height: 5px;
-    background: #ffba05;
-    position: absolute;
-    top: 270px;
-  }
-  .contanier-introducao h1 {
-    font-size: 2rem;
+  .title h1 {
+    font-size: 24px;
     text-align: center;
   }
-  .contanier-introducao h1 span {
-    font-size: 3rem;
-    white-space: nowrap;
+  .title span {
+    font-size: 40px;
   }
-  .contanier-introducao h2 {
-    font-size: 3rem;
-    white-space: nowrap;
+  .title p {
+    font-size: 20px;
   }
-}
-@media (max-width: 600px) {
-  .introducao {
-    padding: 30px;
-    margin: 0;
-    justify-content: center;
+  .perfil img {
+    margin-bottom: 50px;
+    width: 250px;
+    height: 230px;
     display: grid;
-  }
-  .ul-icons {
-    margin-left: 30px;
-  }
-  .contanier-introducao h2 {
-    font-size: 2rem;
-  }
-  .contanier-introducao h1 {
-    font-size: 1.5rem;
     text-align: center;
   }
-  .contanier-introducao h1 span {
-    font-size: 2rem;
+  .actions {
+    justify-content: center;
+    display: grid;
+    grid-template-columns: 1fr;
   }
-  .contanier-introducao::before {
-    content: "";
-    max-width: 100%;
-    width: 400px;
-    height: 5px;
-    background: #ffba05;
-    position: absolute;
-    top: 215px;
-    left: 10px;
+  .contato {
+    width: 200px;
+    height: 50px;
+    padding: 10px;
+    margin-top: 20px;
+  }
+  .curriculo {
+    width: 200px;
+    height: 50px;
+    padding: 10px;
   }
 }

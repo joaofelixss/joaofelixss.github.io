@@ -1,17 +1,17 @@
 .sobre-mim {
   font-family: poppins, sans-serif;
-  font-weight: 300;
+  font-weight: 100;
 }
 
 .sobre-mim h3 {
   font-size: 44px;
-  color: #051932;
+  color: #fff;
   margin-top: 40px;
   text-align: center;
 }
 
 .sobre-mim p {
-  color: #051932;
+  color: #fff;
   font-size: 22px;
   max-width: 80ch;
   font-weight: 600;
@@ -21,42 +21,37 @@
 .habilidades {
   display: grid;
   justify-content: center;
-  background: #fff;
   text-align: center;
 }
 
 .habilidades h1 {
   font-size: 3rem;
   text-align: center;
+  color: #fff;
 }
 
 .icones {
   display: grid;
   gap: 20px;
-  justify-content: center;
   align-items: center;
   margin-bottom: 4rem;
+  justify-items: center;
 }
 
 .icones1 {
   display: flex;
   gap: 20px;
-  text-align: center;
 }
 
 .icones2 {
   display: flex;
   gap: 20px;
-  justify-content: center;
-  text-align: center;
 }
 
 .icones li {
   display: grid;
   justify-content: center;
   padding: 20px;
-  background: #051932;
-  border: 2px solid #ffba05;
   border-radius: 10px;
   color: #fff;
   font-size: 1rem;
@@ -68,11 +63,27 @@ li img {
   height: 64px;
 }
 
+@media (max-width: 1150px) {
+  .sobre-mim{
+    padding: 20px;
+  }
+  .sobre-mim h3 {
+    font-size: 2rem;
+  }
+  .sobre-mim p {
+    font-size: 1.5rem;
+    font-weight: 100;
+  }
+}
+
 @media (max-width: 600px) {
   .habilidades {
     display: grid;
     justify-content: center;
     padding: 1.5rem;
+  }
+  .habilidades h1 {
+    font-size: 30px;
   }
   .icones {
     gap: 10px;
@@ -81,10 +92,11 @@ li img {
     justify-content: center;
   }
   .icones li {
-    font-size: 1rem;
+    font-size: 0.8rem;
     font-weight: 600;
     display: grid;
     justify-content: center;
+    justify-items: center;
     width: 100px;
     padding: 1rem;
   }
@@ -107,5 +119,6 @@ li img {
   }
   .sobre-mim p {
     font-size: 1rem;
+    font-weight: 100;
   }
 }

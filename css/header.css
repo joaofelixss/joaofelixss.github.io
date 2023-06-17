@@ -26,18 +26,6 @@
   cursor: pointer;
 }
 
-.menu a.curriculo {
-  color: #051932;
-  background: #ffba05;
-  border-radius: 10px;
-  font-weight: 600;
-}
-
-.menu a.curriculo:hover {
-  color: #ffba05;
-  background: #051932;
-}
-
 .menu a:hover {
   color: #ffba05;
   transition: 0.3s;
@@ -47,15 +35,7 @@
   display: none;
 }
 
-@media (max-width: 800px) {
-  .menu {
-    justify-content: center;
-    grid-template-columns: 1fr;
-    display: grid;
-  }
-}
-
-@media (max-width: 600px) {
+@media (max-width: 900px) {
   .header {
     margin: 30px;
   }
@@ -84,7 +64,7 @@
     visibility: visible;
     overflow-y: auto;
     display: block;
-    height: 22vh;
+    height: 17vh;
     width: 20vh;
   }
   .menu a {
@@ -92,11 +72,6 @@
     padding: 10px;
     cursor: pointer;
     display: grid;
-  }
-  .menu a.curriculo {
-    color: #051932;
-    background: #ffba05;
-    border-radius: 0;
   }
   #btn-mobile {
     display: flex;

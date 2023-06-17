@@ -8,34 +8,7 @@
   background: #ffba05;
 }
 
-.contato {
-  display: flex;
-  gap: 100px;
-  height: 15vh;
-  align-items: center;
-}
-
-.contato li {
-  display: flex;
-  height: 50px;
-  width: 50px;
-  font-size: 1rem;
-  padding: 10px;
-  gap: 10px;
-  align-items: center;
-  white-space: nowrap;
-}
-
 .footer-icons {
   display: flex;
   gap: 20px;
-}
-
-@media (max-width: 1100px) {
-  .contato {
-    flex-direction: column;
-    gap: 10px;
-    height: 50vh;
-    justify-content: center;
-  }
 }
