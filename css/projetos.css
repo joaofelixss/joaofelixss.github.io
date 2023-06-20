@@ -25,19 +25,13 @@
   padding: 40px;
 }
 
-.icones-projetos {
-  display: flex;
-  gap: 5px;
-  margin-top: 8px;
-}
-.icones-projetos img {
-  height: 50px;
-  width: 50px;
-}
-
 .imagem img {
   width: 550px;
   height: 350px;
+}
+
+.icons img{
+  padding: 10px;
 }
 
 @media (max-width: 1400px) {
@@ -82,15 +76,6 @@
 }
 
 @media (max-width: 600px) {
-  .icones-projetos {
-    display: flex;
-    gap: 5px;
-    margin-top: 8px;
-  }
-  .icones-projetos img {
-    height: 30px;
-    width: 30px;
-  }
   .contanier-img {
     height: 200px;
     width: 350px;

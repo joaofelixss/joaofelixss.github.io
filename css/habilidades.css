@@ -1,124 +1,98 @@
-.sobre-mim {
-  font-family: poppins, sans-serif;
-  font-weight: 100;
-}
-
-.sobre-mim h3 {
-  font-size: 44px;
-  color: #fff;
-  margin-top: 40px;
-  text-align: center;
-}
-
-.sobre-mim p {
-  color: #fff;
-  font-size: 22px;
-  max-width: 80ch;
-  font-weight: 600;
-  margin-bottom: 100px;
-}
-
-.habilidades {
+.habilidades{
   display: grid;
-  justify-content: center;
+  grid-template-columns: 50% 50%;
   text-align: center;
-}
-
-.habilidades h1 {
-  font-size: 3rem;
-  text-align: center;
-  color: #fff;
-}
-
-.icones {
-  display: grid;
-  gap: 20px;
   align-items: center;
-  margin-bottom: 4rem;
-  justify-items: center;
+  gap: 10px;
+  padding: 1rem;
+  justify-content: center;
 }
 
-.icones1 {
-  display: flex;
-  gap: 20px;
-}
-
-.icones2 {
-  display: flex;
-  gap: 20px;
-}
-
-.icones li {
+.sobre-descricao {
+  color: #fff;
+  font-size: 2rem;
   display: grid;
   justify-content: center;
-  padding: 20px;
-  border-radius: 10px;
+}
+
+.sobre-descricao h2 {
+  font-size: 1rem;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+  color: #ffba05;
+}
+
+.sobre-descricao p {
   color: #fff;
   font-size: 1rem;
-  font-weight: 600;
+  max-width: 80ch;
 }
 
-li img {
-  width: 64px;
-  height: 64px;
+.sobre-lista {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-bottom: 40px;
+}
+
+.sobre-lista li {
+  cursor: pointer;
+  width: 50px;
+  height: 50px;
+  background: #ffba05;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.sobre-lista li:hover {
+  background: none;
+}
+
+.minhas-skills {
+  padding: 40px;
+  color: #fff;
+}
+
+.minhas-skills h2 {
+  margin-bottom: 10px;
+}
+
+.js [data-tab="content"] section {
+  display: none;
+}
+
+[data-tab="content"] section.ativo {
+  display: block !important;
+}
+
+[data-tab="content"] section.ativo.show-right {
+  animation: show-right 0.5s forwards;
+}
+
+@keyframes show-right {
+  from {
+    opacity: 0;
+    transform: translate3d(-30px, 0, 0);
+  }
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
 }
 
 @media (max-width: 1150px) {
-  .sobre-mim{
-    padding: 20px;
+  .habilidades{
+    grid-template-columns: 1fr;
   }
-  .sobre-mim h3 {
-    font-size: 2rem;
-  }
-  .sobre-mim p {
-    font-size: 1.5rem;
-    font-weight: 100;
-  }
-}
-
-@media (max-width: 600px) {
-  .habilidades {
-    display: grid;
-    justify-content: center;
-    padding: 1.5rem;
-  }
-  .habilidades h1 {
-    font-size: 30px;
-  }
-  .icones {
-    gap: 10px;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    justify-content: center;
-  }
-  .icones li {
-    font-size: 0.8rem;
-    font-weight: 600;
-    display: grid;
-    justify-content: center;
-    justify-items: center;
-    width: 100px;
-    padding: 1rem;
-  }
-  .icones1 {
-    display: grid;
-    gap: 1rem;
-    justify-content: center;
-  }
-  .icones2 {
-    display: grid;
-    gap: 1rem;
-    justify-content: center;
-  }
-  li img {
-    width: 50px;
-    height: 50px;
-  }
-  .sobre-mim h3 {
-    font-size: 1.5rem;
-  }
-  .sobre-mim p {
+  .sobre-descricao {
     font-size: 1rem;
-    font-weight: 100;
+  }
+  .sobre-lista {
+    margin-top: 10px;
+  }
+  .minhas-skills h2{
+    font-size: 1.2rem;
   }
 }

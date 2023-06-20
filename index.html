@@ -9,7 +9,7 @@
   <link rel="stylesheet" href="./css/style.css">
   <link rel="icon" href="./img/Group 41.svg" type="image/svg+xml">
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet">
-  <script> document.documentElement.className = ' js';</script>
+  <script> document.documentElement.className += ' js';</script>
 </head>
 
 <body>
@@ -19,8 +19,8 @@
       <button id="btn-mobile">Menu<span id="detalhe"></span></button>
       <ul class="menu">
         <li><a href="#sobre-mim">Sobre mim</a></li>
-        <li><a href="#habilidades">Habilidades</a></li>
         <li><a href="#projetos">Projetos</a></li>
+        <li><a href="#contato">Contato</a></li>
       </ul>
     </nav>
   </header>
@@ -38,39 +38,45 @@
     </div>
   </section>
 
-  <section class="habilidades" aria-label="habilidades">
-    <div id="sobre-mim" class="sobre-mim">
-      <h3>Sobre mim...</h3>
-      <p>Muito prazer meu nome é João Félix, tenho 19 anos e faço graduação em Engenharia de Software. Sou um profissional altamente motivado e apaixonado por tecnologia. Estou constantemente em busca de novos desafios e oportunidades para expandir meus conhecimentos e contribuir para o sucesso das organizações.<br><br>
-
-        Com habilidades sólidas em HTML | CSS | PHP | Javascript | MySQL | Git e Github sou capaz de fazer sites como: Landing pages, sistema de cadastro login e estou em nesse exato momento em um projeto de sistemas utilizando CRUD como por exemplo um site de delivery para voce escolher oque vai comprar e ainda monitorar os seus pedidos como: Concluído, em entrega e em produção. Sou conhecido por minha ética de trabalho excepcional, atenção aos detalhes e capacidade de trabalhar efetivamente tanto de forma independente quanto em equipe.<br><br>
-
-        Meu objetivo é utilizar minha experiência e conhecimentos para assim contribuir com a empresa o máximo possível. Acredito na importância do aprendizado contínuo e estou sempre disposto a adquirir novas habilidades e acompanhar as tendências do mercado.<br><br>
-
-        Estou empenhado em estabelecer parcerias significativas e construir relacionamentos profissionais sólidos. Se você está buscando um profissional dedicado, orientado para resultados e com habilidades de um back-end developer, ficarei feliz em discutir oportunidades de colaboração. <br><br>
-
-        Entre em contato comigo para conhecer mais sobre minha trajetória profissional e como podemos alcançar resultados incríveis juntos.<br><br>
-
-        Email: felixjoao651@gmail.com<br>
-        Instagram: @joaofelix.dev.</p>
+  <section class="habilidades" data-anime="scroll" id="sobre-mim">
+    <div class="sobre-descricao" data-tab="content">
+      <h1>Sobre-mim</h1>
+      <ul class="sobre-lista" data-tab="menu">
+        <li>😃</li>
+        <li>🧑‍💻</li>
+        <li>🚀</li>
+      </ul>
+      <section data-anime="show-right">
+        <h2>😃 Conhecendo</h2>
+        <p>😃 Muito prazer meu nome é João Félix, tenho 19 anos e faço graduação em Engenharia de Software. Sou um profissional altamente motivado e apaixonado por tecnologia. Estou constantemente em busca de novos desafios e oportunidades para expandir meus conhecimentos e contribuir para o sucesso das organizações.</p>
+      </section>
+      <section data-anime="show-right">
+        <h2>🧑‍💻 Habilidades</h2>
+        <p>🧑‍💻 Com habilidades sólidas em HTML | CSS | PHP | Javascript | MySQL | Git e Github sou capaz de fazer sites como: Landing pages, sistema de cadastro login e estou em nesse exato momento em um projeto de sistemas utilizando CRUD como por exemplo um site de delivery para voce escolher oque vai comprar e ainda monitorar os seus pedidos como: Concluído, em entrega e em produção. Sou conhecido por minha ética de trabalho excepcional, atenção aos detalhes e capacidade de trabalhar efetivamente tanto de forma independente quanto em equipe.</p>
+      </section>
+      <section data-anime="show-right">
+        <h2>🚀 Objetivo</h2>
+        <p>🚀 Meu objetivo é utilizar minha experiência e conhecimentos para assim contribuir com a empresa o máximo possível. Acredito na importância do aprendizado contínuo e estou sempre disposto a adquirir novas habilidades e acompanhar as tendências do mercado.</p>
+      </section>
     </div>
-    <h1>Habilidades<span>.</span></h1>
-    <ul id="habilidades" class="icones">
-      <div class="icones1">
-        <li><img src="./img/PHP.png" alt="php">PHP</li>
-        <li><img src="./img/mysql.png" alt="MySQL">MySQL</li>
-        <li><img src="./img/javascript.png" alt="javascrit">javascrit</li>
-        <li><img src="./img/GITHUB.png" alt="Github">Github</li>
-        <li><img src="./img/GIT.png" alt="GIT">GIT</li>
+    <div class="contanier-minhas-skills">
+      <div class="minhas-skills">
+        <h2>🚀 Minhas Skills</h2>
+        <p align="center">
+          <a href="https://skillicons.dev">
+            <img src="https://skillicons.dev/icons?i=git,github,html,css,javascript,php,mysql,figma" />
+          </a>
+        </p>
       </div>
-      <div class="icones2">
-        <li><img src="./img/HTML.png" alt="HTML">HTML</li>
-        <li><img src="./img/CSS.png" alt="css">css</li>
-        <li><img src="./img/DESIGN.png" alt="UI Design">UI Design</li>
-        <li><img src="./img/FIGMA.png" alt="FIGMA">FIGMA</li>
-        <li><img src="/img/wordpress.png" alt="WordPress">WordPress</li>
+      <div class="minhas-skills">
+        <h2>📚 Buscando conhecimentos em:</h2>
+        <p align="center">
+          <a href="https://skillicons.dev">
+            <img src="https://skillicons.dev/icons?i=laravel,mongodb,docker,aws,java,vue,cloudflare" />
+          </a>
+        </p>
       </div>
-    </ul>
+    </div>
   </section>
 
   <section class="projetos" id="projetos" aria-label="projetos">
@@ -85,13 +91,10 @@
             <img src=" ./img/PROJETO_FORMULÁRIO.jpg" alt="projeto Formulario">
           </a>
         </div>
-        <ul class="icones-projetos">
-          <li><img src="./img/PHP.png" alt="php"></li>
-          <li><img src="./img/mysql.png" alt="MySQL"></li>
-          <li><img src="./img/HTML.png" alt="HTML"></li>
-          <li><img src="./img/CSS.png" alt="CSS"></li>
-          <li><img src="./img/GITHUB.png" alt="Github"></li>
-          <li><img src="./img/GIT.png" alt="GIT"></li>
+        <ul class="icons">
+          <a href="https://skillicons.dev">
+            <img src="https://skillicons.dev/icons?i=git,github,html,css,php,mysql,figma" />
+          </a>
         </ul>
       </div>
       <div class="contanier-img">
@@ -101,42 +104,10 @@
             <img src="/img//PROJETO_BICKRAFT.png" alt="projeto Bikcraft">
           </a>
         </div>
-        <ul class="icones-projetos">
-          <li><img src="./img/HTML.png" alt="HTML"></li>
-          <li><img src="./img/CSS.png" alt="CSS"></li>
-          <li><img src="./img/GITHUB.png" alt="Github"></li>
-          <li><img src="./img/GIT.png" alt="GIT"></li>
-        </ul>
-      </div>
-      <div class="contanier-img">
-        <div class="imagem">
-          <h2>Projeto Blog</h2>
-          <a href="https://github.com/joaofelixss/blog_php">
-            <img src="img/blog-codar.png" alt="projeto Blog">
+        <ul class="icons">
+          <a href="https://skillicons.dev">
+            <img src="https://skillicons.dev/icons?i=git,github,html,css" />
           </a>
-        </div>
-        <ul class="icones-projetos">
-          <li><img src="./img/PHP.png" alt="php"></li>
-          <li><img src="./img/HTML.png" alt="HTML"></li>
-          <li><img src="./img/CSS.png" alt="CSS"></li>
-          <li><img src="./img/GITHUB.png" alt="Github"></li>
-          <li><img src="./img/GIT.png" alt="GIT"></li>
-        </ul>
-      </div>
-      <div class="contanier-img">
-        <div class="imagem">
-          <h2>Portifólio</h2>
-          <a href="index.html">
-            <img src="/img/PROJETO_PORTIFÓLIO.jpg" alt="Portifólio">
-          </a>
-        </div>
-        <ul class="icones-projetos">
-          <li><img src="./img/HTML.png" alt="HTML"></li>
-          <li><img src="./img/CSS.png" alt="CSS"></li>
-          <li><img src="./img/GITHUB.png" alt="Github"></li>
-          <li><img src="./img/GIT.png" alt="GIT"></li>
-          <li><img src="./img/DESIGN.png" alt="UI Design"></li>
-          <li><img src="./img/FIGMA.png" alt="FIGMA"></li>
         </ul>
       </div>
       <div class="contanier-img">
@@ -146,38 +117,40 @@
             <img src="/img/PROJETO_JOGUI.jpg" alt="Jogui">
           </a>
         </div>
-        <ul class="icones-projetos">
-          <li><img src="./img/PHP.png" alt="php"></li>
-          <li><img src="./img/mysql.png" alt="MySQL"></li>
-          <li><img src="./img/HTML.png" alt="HTML"></li>
-          <li><img src="./img/CSS.png" alt="CSS"></li>
-          <li><img src="./img/GITHUB.png" alt="Github"></li>
-          <li><img src="./img/GIT.png" alt="GIT"></li>
-          <li><img src="./img/DESIGN.png" alt="UI Design"></li>
-          <li><img src="./img/FIGMA.png" alt="FIGMA"></li>
+        <ul class="icons">
+          <a href="https://skillicons.dev">
+            <img src="https://skillicons.dev/icons?i=git,github,html,css,php,mysql,figma" />
+          </a>
         </ul>
       </div>
       <div class="contanier-img">
         <div class="imagem">
-          <h2>Em breve</h2>
-          <img src="/img/EM BREVE.jpg" alt="em breve">
+          <h2>Em breve mais projetos</h2>
+          <a href="https://github.com/joaofelixss/jogui.software">
+            <img src="/img/PROJETO_JOGUI.jpg" alt="Jogui">
+          </a>
         </div>
+        <ul class="icons">
+          <a href="https://skillicons.dev">
+            <img src="https://skillicons.dev/icons?i=git,github,html,css,javascript,figma" />
+          </a>
+        </ul>
       </div>
-    </div>
   </section>
 
   <footer class="footer" id="contato">
-    <h1>Contato<span>.</span></h1>
+    <h1>😉 Entre em contato comigo para conhecer mais sobre minha trajetória profissional e como podemos alcançar resultados incríveis juntos.</h1>
+    <p>🤓 Estou empenhado em estabelecer parcerias significativas e construir relacionamentos profissionais sólidos. Se você está buscando um profissional dedicado, orientado para resultados e com habilidades de um back-end developer, ficarei feliz em discutir oportunidades de colaboração.</p>
     <h2>Me siga em:</h2>
     <ul class="footer-icons">
       <a href="https://github.com/joaofelixss">
-        <li><img src="/img/icons8-github-50.png" alt="github"></li>
+        <li><img src="/img/github.png" alt="github"></li>
       </a>
       <a href="https://www.instagram.com/joaofelix.dev/">
-        <li><img src="/img/icons8-instagram-48.png" alt="instagram"></li>
+        <li><img src="/img/instagram.png" alt="instagram"></li>
       </a>
       <a href="https://www.linkedin.com/in/joaofelixss/">
-        <li><img src="/img/icons8-linkedin-48.png" alt="linkedin"></li>
+        <li><img src="/img/linkedin.png" alt="linkedin"></li>
       </a>
     </ul>
   </footer>
