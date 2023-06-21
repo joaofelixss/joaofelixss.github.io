@@ -36,18 +36,23 @@
 }
 
 .sobre-lista li {
-  cursor: pointer;
-  width: 50px;
-  height: 50px;
-  background: #ffba05;
-  border-radius: 10px;
   display: flex;
   align-items: center;
   justify-content: center;
+  text-align: center;
+  font-size: 1rem;
+  font-weight: bold;
+  background: #ffba05;
+  color: black;
+  border-radius: 10px;
+  width: 150px;
+  height: 50px;
+  cursor: pointer;
 }
 
 .sobre-lista li:hover {
   background: none;
+  color: #fff;
 }
 
 .minhas-skills {
@@ -91,6 +96,7 @@
   }
   .sobre-lista {
     margin-top: 10px;
+    gap: 7px;
   }
   .minhas-skills h2{
     font-size: 1.2rem;
