@@ -6,13 +6,9 @@ A aplicação consiste em uma Landing page biasica, onde as pessoas possam naveg
 
 ## Layout mobile
 <div>
-  <img>
+  <img src="Captura de tela 2023-06-22 142114.png">
+  <img src="Captura de tela 2023-06-22 142143.png">
 </di>      
-
-## Layout web
-<div>
-  <img>
-</di>    
 
 # Tecnologias utilizadas
 [![My Skills](https://skillicons.dev/icons?i=git,github,html,css,js,figma)](https://skillicons.dev)
