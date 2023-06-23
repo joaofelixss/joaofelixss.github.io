@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulário com JS</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <section>
+    <form id="form">
+      <h1>Cadastrese aqui👍</h1>
+      <div>
+        <label for="text">Nome Completo</label>
+        <input type="text" placeholder="Escreva seu nome" class="inputs required" oninput="nameValidate()">
+        <span class="span-requerid">pelo menos 3 letras</span>
+      </div>
+      <div>
+        <label for="email">Email</label>
+        <input type="email" placeholder="Escreva seu email" class="inputs required" oninput="emailValidate()">
+        <span class="span-requerid">Escreva um email válido</span>
+      </div>
+      <div>
+        <label for="text">Senha</label>
+        <input type="password" placeholder="senha" class="inputs required" oninput="senhaValidate()">
+        <span class="span-requerid">Senha com no mínimo 8 caracteres</span>
+      </div>
+      <div>
+        <label for="text">Confirme sua senha</label>
+        <input type="password" placeholder="Confirme sua senha" class="inputs required" oninput="compareSenha()">
+        <span class="span-requerid">As senhas devem ser compatíveis</span>
+      </div>
+      <button class="submit" type="submit">Enviar</button>
+    </form>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
