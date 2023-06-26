@@ -1,0 +1,169 @@
+.historia-dogs {
+  display: grid;
+  grid-template-columns: 32% 68%;
+  padding: 40px 20px 0px 20px;
+  height: 92vh;
+}
+.fotos-dogs ul {
+  display: grid;
+  justify-items: right;
+}
+
+.fotos-dogs li {
+  display: grid;
+  align-items: center;
+  width: 29vh;
+  height: 28.5vh;
+  padding: 20px;
+}
+
+.conteudo {
+  text-align: start;
+}
+
+.conteudo h1 {
+  text-align: start;
+  color: #167bf7;
+  font-size: 3rem;
+}
+
+.personalidade {
+  display: grid;
+  justify-items: start;
+  align-items: center;
+  padding: 0px 40px;
+  grid-template-columns: 40% 60%;
+  color: #fff;
+}
+
+.personalidade h1 {
+  text-align: start;
+}
+
+.bloco-personalidade {
+  display: grid;
+  align-items: center;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+
+.bloco1 {
+  display: grid;
+  align-items: center;
+  text-align: center;
+  background: #167bf7;
+  padding: 20px;
+  width: 150px;
+  height: 100px;
+  border-radius: 10px;
+}
+
+.foto {
+  padding: 40px;
+}
+
+.foto p {
+  text-align: start;
+  font-weight: 600;
+  max-width: 70ch;
+  margin-bottom: 40px;
+}
+.foto img {
+  max-width: 80vh;
+}
+
+/*conhecendo dogs*/
+.conhecendo-dogs {
+  display: grid;
+  justify-items: center;
+  height: 67vh;
+  padding: 0px 20px;
+}
+
+.conhecendo-dogs p {
+  max-width: 95ch;
+}
+
+.especificacao {
+  display: grid;
+  justify-content: center;
+  text-align: center;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.especificacao img {
+  max-width: 50vh;
+}
+.blocos-especificacao {
+  display: grid;
+  justify-items: center;
+}
+.blocos-especificacao p {
+  max-width: 50ch;
+}
+
+@media (max-width: 800px) {
+  .historia-dogs {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    height: 75vh;
+  }
+  .fotos-dogs ul {
+    display: flex;
+  }
+  .fotos-dogs li {
+    height: 10vh;
+    width: 30vh;
+  }
+  .conteudo h1 {
+    font-size: 2rem;
+  }
+  .personalidade {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+  }
+  .bloco-personalidade {
+    display: flex;
+  }
+  .bloco1 {
+    background: #167bf7;
+    padding: 20px;
+    width: 120px;
+    height: 80px;
+    font-size: 0.7rem;
+  }
+  .foto {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+  }
+  .conhecendo-dogs {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    height: 110vh;
+    padding: 20px;
+  }
+  .conhecendo-dogs p {
+    max-width: 80ch;
+  }
+  .especificacao {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    gap: 20px;
+  }
+  .especificacao img {
+    max-width: 35vh;
+  }
+  .blocos-especificacao {
+    display: grid;
+    justify-items: center;
+  }
+  .blocos-especificacao p {
+    max-width: 50ch;
+  }
+}
