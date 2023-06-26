@@ -108,7 +108,7 @@
     display: flex;
     flex-direction: column;
     padding: 20px;
-    height: 75vh;
+    height: 80vh;
   }
   .fotos-dogs ul {
     display: flex;
@@ -129,11 +129,10 @@
     display: flex;
   }
   .bloco1 {
-    background: #167bf7;
     padding: 20px;
-    width: 120px;
-    height: 80px;
-    font-size: 0.7rem;
+    width: 90px;
+    height: 70px;
+    font-size: 0.5rem;
   }
   .foto {
     display: flex;
@@ -144,7 +143,7 @@
     display: flex;
     flex-direction: column;
     text-align: center;
-    height: 110vh;
+    height: 130vh;
     padding: 20px;
   }
   .conhecendo-dogs p {

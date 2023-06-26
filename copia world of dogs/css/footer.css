@@ -64,7 +64,7 @@ input {
 
 @media (max-width: 1150px) {
   .conteudo-footer {
-    height: 75vh;
+    height: 80vh;
   }
   input {
     margin-bottom: 20px;
