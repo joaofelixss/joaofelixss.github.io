@@ -6,8 +6,9 @@ A aplicação consiste em uma Landing page biasica, onde as pessoas possam naveg
 
 ## Layout mobile
 <div>
-  <img src="Captura de tela 2023-06-22 142114.png">
-  <img src="Captura de tela 2023-06-22 142143.png">
+  <img src="./img/foto1.1.png">
+  <img src="./img/foto2.1.png">
+  <img src="./img/foto3.1.png">
 </di>      
 
 # Tecnologias utilizadas
