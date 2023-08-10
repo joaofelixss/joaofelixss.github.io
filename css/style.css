@@ -1,0 +1,17 @@
+@import "./global.css";
+@import "./header.css";
+@import "./introducao.css";
+@import "./habilidades.css";
+@import "./projetos.css";
+@import "./footer.css";
+
+.ski{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.rest{
+  width: 100px;
+  height: 100px;
+}

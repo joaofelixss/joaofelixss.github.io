@@ -1,0 +1,127 @@
+.introducao h1,
+h2,
+h3,
+p {
+  margin: 0px;
+}
+
+.introducao {
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  grid-template-columns: 1fr 1fr;
+  margin: 140px;
+  max-width: 100%;
+  gap: 50px;
+}
+
+.title {
+  display: grid;
+  align-items: center;
+  justify-content: center;
+}
+
+.title h1 {
+  font-size: 50px;
+  color: #fff;
+  text-align: start;
+}
+
+.title span {
+  font-size: 40px;
+  color: #ffba05;
+  font-weight: 600;
+  text-align: center;
+}
+
+.title p {
+  color: #fff;
+  font-size: 30px;
+  text-align: center;
+}
+
+.introducao img {
+  max-width: 100%;
+  display: block;
+  border-radius: 200px;
+}
+
+.actions {
+  padding: 30px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  justify-content: center;
+}
+
+.curriculo {
+  color: #051932;
+  background: #ffba05;
+  border-radius: 40px;
+  font-weight: 600;
+  padding: 20px;
+  text-align: center;
+}
+
+.curriculo:hover {
+  color: #ffba05;
+  background: #051932;
+}
+
+.contato {
+  color: #fff;
+  border-radius: 40px;
+  border: #ffba05 2px solid;
+  font-weight: 600;
+  padding: 20px;
+  text-align: center;
+}
+
+.contato:hover {
+  color: #ffba05;
+  background: #051932;
+}
+
+@media (max-width: 1150px) {
+  .introducao {
+    padding: 30px;
+    margin: 0;
+    justify-content: center;
+    display: grid;
+    justify-items: center;
+    grid-template-columns: 1fr;
+  }
+  .title h1 {
+    font-size: 24px;
+    text-align: center;
+  }
+  .title span {
+    font-size: 40px;
+  }
+  .title p {
+    font-size: 20px;
+  }
+  .perfil img {
+    margin-bottom: 50px;
+    width: 250px;
+    height: 230px;
+    display: grid;
+    text-align: center;
+  }
+  .actions {
+    justify-content: center;
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .contato {
+    width: 200px;
+    height: 50px;
+    padding: 10px;
+    margin-top: 20px;
+  }
+  .curriculo {
+    width: 200px;
+    height: 50px;
+    padding: 10px;
+  }
+}
